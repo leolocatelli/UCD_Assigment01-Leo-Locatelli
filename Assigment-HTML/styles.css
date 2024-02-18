@@ -1,0 +1,541 @@
+:root {
+    --primary-color: #f9f7f7;
+    /* Primary color */
+    --secondary-color: #dbe2ef;
+    /* Secondary color */
+    --tertiary-color: #3f72af;
+    /* Tertiary color */
+    --quaternary-color: #112d4e;
+    /* Quaternary color */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(./images/take-off-from-springboard-skier-air-jump-flying-up-from-ski-springboard.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    height: 83vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li {
+    padding: 19px;
+    font-weight: 900;
+    color: var(--quaternary-color);
+    position: relative;
+}
+
+li:hover {
+    color: var(--tertiary-color);
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+header a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 15px;
+    background-color: var(--tertiary-color);
+    transition: width 0.4s ease-out;
+}
+
+header a:hover::before {
+    width: 70%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: var(--tertiary-color);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    margin: 0;
+}
+
+iframe {
+    width: 55vw;
+    height: 60vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+footer img {
+    width: 100vw;
+}
+
+table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    /* margin: auto; */
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+th {
+    padding: 15px;
+    font-size: 1.4rem;
+    color: var(--quaternary-color);
+}
+
+table td {
+    text-align: center;
+    padding: 20px 40px;
+    border-right: 1px solid var(--primary-color);
+}
+
+table td:nth-child(odd) {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 8vw;
+    max-height: auto;
+}
+
+.contentBanner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.leadQuote1 {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--quaternary-color);
+    text-align: left;
+    margin: 0;
+}
+
+.leadQuote2 {
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 900px;
+    color: var(--tertiary-color);
+    text-align: left;
+    margin: 0;
+    padding-left: 4vw;
+}
+
+.snowboard {
+    padding-left: 1vw;
+}
+
+.imageLead img {
+    width: 450px;
+    padding: 0px 0 0 90px;
+}
+
+.snowboard img {
+    width: 650px;
+    padding: 5px 0 0 0px;
+}
+
+.welcomeSection,
+.iconesWelcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.sportText {
+    margin: 50px 0 80px 0;
+    flex-direction: row-reverse;
+}
+
+.iconesWelcome {
+    justify-content: start;
+}
+
+.iconesWelcome img {
+    width: 100px;
+    height: auto;
+}
+
+.imageWelcome img {
+    width: 500px;
+    height: auto;
+    padding-left: 30px;
+}
+
+.iconesTextWelcome {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.snowIcon,
+.skiIcon {
+    background-color: var(--tertiary-color);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.9s;
+}
+
+.snowIcon:hover,
+.skiIcon:hover {
+    background-color: var(--quaternary-color);
+}
+
+.snowIcon:hover img,
+.skiIcon:hover img {
+    transition: ease 0.5s;
+}
+
+.snowIcon:hover img:hover,
+.skiIcon:hover img:hover {
+    scale: 1.1;
+}
+
+/* .textWelcome {
+    padding-top: 35px;
+} */
+
+.textWelcome p {
+    color: var(--quaternary-color);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.iframeContainer {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.promoBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promoBanner img {
+    width: 100vw;
+}
+
+.commentsReview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.commentsReview img {
+    width: 25vw;
+}
+
+.footerText {
+    background-color: var(--tertiary-color);
+    height: 7vh;
+    width: 100vw;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.tableTitle {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 5px;
+}
+
+.contactInfos {
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+.contactInfos h1 {
+    text-align: end;
+}
+
+.lines {
+    width: 2px;
+    height: 200px;
+    background-color: var(--tertiary-color);
+    margin: 0 50px;
+}
+
+.middlePadding {
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .imageLead {
+        display: none;
+    }
+
+    .contactInfos h1 {
+        text-align: center;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .logo img {
+        max-width: 13vw;
+        max-height: auto;
+    }
+
+    li {
+        padding: 10px;
+        color: var(--primary-color);
+    }
+
+    .topMenu {
+        background-color: var(--tertiary-color);
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    ul {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: var(--tertiary-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .toggle-menu:checked~nav .mobile-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .mobile-menu-icon span {
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: var(--secondary-color);
+        margin: 8px 0;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    header {
+        background-size: 250vw;
+        height: 47vh;
+    }
+
+    iframe {
+        width: 90vw;
+        height: 35vh;
+    }
+
+    .leadQuote1 {
+        color: var(--quaternary-color);
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .leadQuote2 {
+        font-size: 14vw;
+        font-style: italic;
+        color: var(--tertiary-color);
+        padding-left: 0;
+    }
+
+    .contentBanner {
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 10vh;
+    }
+
+    .logo img {
+        max-width: 150px;
+        max-height: auto;
+    }
+
+    .welcomeSection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .imageWelcome img {
+        display: none;
+        margin: auto;
+    }
+
+    .equipmentDisplay img {
+        display: block;
+        justify-content: center;
+        max-width: 90%;
+        padding-top: 10px;
+    }
+
+    .sportText {
+        flex-direction: column-reverse;
+    }
+
+    .welcomeSection {
+        margin: 0 20px;
+    }
+
+    .iconesTextWelcome {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .snowIcon,
+    .skiIcon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .snowIcon img,
+    .skiIcon img {
+        scale: 0.9;
+    }
+
+    .iconesWelcome {
+        justify-content: center;
+    }
+
+    .commentsReview img {
+        width: 45vw;
+    }
+
+    .lines {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        width: 70%;
+        height: auto;
+    }
+
+    .mobile-menu-icon {
+        top: 37px;
+        right: 33px;
+    }
+
+    .mobile-menu-icon span {
+        width: 30px;
+        height: 4px;
+        margin: 4px 0;
+    }
+
+    .reviewImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .commentsReview img {
+        width: 70vw;
+    }
+
+    .footerText p {
+        font-size: 10px;
+    }
+}
